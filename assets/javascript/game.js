@@ -16,6 +16,7 @@ console.log("Wins: " + wins + " Losses: " + losses + " GuessesLeft: " + guessesL
 document.onkeyup = function(event) {
 
 	// When user presses a key, it records it and saves to userGuess
+	//takes only letters
 	var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
 
 	// Add the user's guess to guessesSoFar array 
@@ -32,7 +33,7 @@ document.onkeyup = function(event) {
 	// also have the computer make a new random pick
 	if (letterToBeGuessed == userGuess) {
 		wins++;
-		console.log("You won!");
+		alert("You are a mind reader!");
 		guessesLeft = 9;
 		guessesSoFar = [];
 		letterToBeGuessed = alphabetLetters[Math.floor(Math.random() * alphabetLetters.length)];
@@ -44,7 +45,7 @@ document.onkeyup = function(event) {
 	// also have the computer make a new random pick
 	if (guessesLeft == 0) {
 		losses++;
-		console.log("You lost!");
+		alert("You lost!");
 		guessesLeft = 9;
 		guessesSoFar = [];
 		letterToBeGuessed = alphabetLetters[Math.floor(Math.random() * alphabetLetters.length)];
