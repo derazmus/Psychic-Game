@@ -12,7 +12,7 @@ var userGuess = null;
 var letterToBeGuessed = alphabetLetters[Math.floor(Math.random() * alphabetLetters.length)];
 console.log("Wins: " + wins + " Losses: " + losses + " GuessesLeft: " + guessesLeft + " Guesses so far: " + guessesSoFar + " Computer picked: " + letterToBeGuessed);
 
-// start listening for events
+//  events
 document.onkeyup = function(event) {
 
 	// When user presses a key, it records it and saves to userGuess
