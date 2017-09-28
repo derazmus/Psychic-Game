@@ -53,7 +53,7 @@ document.onkeyup = function(event) {
 	}
 
 	// Displaying progress to HTML
-	var html = "<p><h1>The Psychic Game</h1></p>" + "<p><h4>Guess what letter I am thinking of</h4></p>" + "<p><h4>Wins: " + wins + "</h4></p>" + "<p><h4>Losses: " + losses + "</h4></p>" + "<p><h4>Guesses Left: " + guessesLeft + "</h4></p>" + "<p><h4>Your guesses so far: " + guessesSoFar + "</h4></p>";
+	var html = "<p><h1>The Psychic Game</h1></p><hr>" + "<p><h2>Guess what letter I am thinking</h2></p><br>" + "<p><h3>Wins: " + wins + "</h3></p>" + "<p><h3>Losses: " + losses + "</h3></p>" + "<p><h3>Guesses Left: "+ guessesLeft + "</h3></p>"+"<p><h3> Guesses so far:" + guessesSoFar + "</h3></p>";
 	// place html into the game ID
 	document.querySelector("#game").innerHTML = html;
 	};
